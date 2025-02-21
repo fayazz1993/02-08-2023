@@ -27,6 +27,7 @@ Process of packing an application with its dependencies.
 ex: PUBG
 
 os level of virtualization: Whatever we have inside our Operating System we have to create backup for it.
+
 apt :apt stands for "Adcance Packaging Tool" it is package management tool for installing, updating, removing, and managing software packages in Ubuntu Linux.
 YUM: Stands for "Yellowdog Updater Modified" it is package management tool for installing, updating, removing, and managing software packages in Red Hat Enterprise Linux.
 
