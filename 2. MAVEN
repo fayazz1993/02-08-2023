@@ -18,7 +18,7 @@ code -- > build & test -- > artifact
 .war = frontend + backend code
 .ear = 
 
-POM.XML: contains info about the project and dependencies of code.
+POM.XML: Stands for Project Object Model , which contains info about the project and dependencies of code.
 target: artifacts will store on this folder. 
 
 INSTALLATION:
