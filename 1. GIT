@@ -294,6 +294,7 @@ git revert branch_name
 
 
 GIT PULL: it will get the files form github to git
+GIT PULL= GIT FETCH + GIT MERGE
 
 =======================================================
 
