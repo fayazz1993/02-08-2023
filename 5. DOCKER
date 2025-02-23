@@ -427,13 +427,17 @@ Dangling image means:
 1.If we create an image with version1 same image we have with version2 . But we are using only image with version1 then version2 image called "Dangling Image"
 2.Same image with 2 versions.  version1 image we are not using but v2 we are using then v1 image called Dangling image.
 3.means copy of the existing image, which is not used by any of the resource.
+
 DOCKER MEMORY MANAGEMENT:
 conatiners uses our host resources (cpu, mem)
 by default we dont have any limits for containers
 we need to set it
 docker run -itd --name cont3 --memory="200mb" --cpus="0.2" ubuntu
+d= dittached mode means comeout from the Containers
 docker inspect cont3
-docker stats
+docker stats : To see how much CPU and Memory utilized by Docker Containers.
+
+we can create containers in two modes, attached mode (-it) and Dettached mode (-itd),
 
 HISTORY:
 
