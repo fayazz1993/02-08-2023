@@ -359,7 +359,7 @@ HISTORY:
 DAY-03:
 Docker-VOLUMES:
 It is used to store data inside container.
-volume is a simple directory inside container.
+volume is a simple directory inside container , we can write the content inside the Volume.
 containers uses host resources (cpu, ram, rom).
 single volume can be shared to multiple containers.
 ex: cont-1 (vol1)  --- > cont2 (vol1) & cont3 (vol1) & cont4 (vol1)
@@ -367,12 +367,11 @@ at a time we can share single volume to single container only.
 
 Docker volumes are stored in    /var/lib/docker/volumes
 METHOD-1:
-DOCKER FILE:
+DOCKER FILE: 
+With the help of Dockerfile we can create Docker_Volume and the Volume we can attach to the Container directly.
 
 FROM ubuntu
 VOLUME ["/volume1"]
-GET VOLUME FROM FILE TO CONTAINER:
-----_-----------++++++++++-------
 
 docker build -t raham:v1 .
 docker run -it --name cont1 raham:v1
@@ -419,11 +418,15 @@ DOCKER SYSTEM COMMANDS:
 used to know complete info about the docker elements
 
 docker system df : to give info of docker objects
-docker system df -v
-docker inspect cont4 | grep volume -i
+docker system df -v  : to give complete detailed info of docker objects
+docker inspect cont4 | grep volume -i   : To see which Volume is attached to which Container
 docker inspect cont5 | grep volume -i
 docker system prune : to remove unused objects of docker
-
+grep : to filter
+Dangling image means:
+1.If we create an image with version1 same image we have with version2 . But we are using only image with version1 then version2 image called "Dangling Image"
+2.Same image with 2 versions.  version1 image we are not using but v2 we are using then v1 image called Dangling image.
+3.means copy of the existing image, which is not used by any of the resource.
 DOCKER MEMORY MANAGEMENT:
 conatiners uses our host resources (cpu, mem)
 by default we dont have any limits for containers
