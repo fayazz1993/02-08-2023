@@ -736,8 +736,8 @@ docker swarm init
 copy token to worker nodes
 docker node ls
 NOTE: 
-1.To connect worker nodes in Ansible and Jenkins we sue - sh
-2.To connect worker nodes in microservices (Docker and K8s) we use - token
+1.In Ansible and Jenkins, To connect worker nodes  we sue - sh
+2.In microservices (Docker and K8s) ,To connect worker nodes  we use - token
 To generate the token in docker swarm : docker swarm init
 
 SERVICES:
