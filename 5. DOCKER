@@ -619,9 +619,11 @@ once you upload image on docker hub u can use image from anywhere
 create a account
 create a repo
 
-docker login
-docker tag movies:v1 vinodvanama/paytmmovies
+docker login :To establish the connection between local Docker to Docker Hub
+docker tag movies:v1 vinodvanama/paytmmovies  :docker tag is the command it is going to Tag my local Image to the Docker Hub
 docker push vinodvanama/paytmmovies
+docker top cont_name: It is a command,it is used to shows "what are the process running inside the Container"
+docker stats: it shows the complete information of Container like live logs "CPU Consumption, Memory consumption, Memory limits etc"
 
 HISTORY:
    47 docker ps -a
