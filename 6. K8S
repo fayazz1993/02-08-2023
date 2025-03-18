@@ -366,8 +366,41 @@ ALTERNATIVES:
 Amazon EKS , MINIKUBE, KUBEADM, RANCHER, TERRAFORM.
 2/2 check:
 ===========
-1.system check.
-2.instance check --means Hardware properties like cpu ram comes under instance check.
+In AWS, "2/2 checks" refers to the Status Checks of an EC2 instance.
+
+1.System Status Check (First Check ✅)-->
+
+
+Checks the underlying AWS infrastructure hosting the instance.
+
+Ensures that the physical host and networking are operational.
+
+Failure could be due to hardware issues, network connectivity problems, or AWS service failures.
+
+
+
+2. Instance Status Check (Second Check ✅)
+
+Checks the health of the OS inside the instance.
+
+Failure could be due to kernel crashes, file system corruption, or misconfigurations.
+
+
+
+
+What Does "2/2 Checks Passed" Mean?
+
+Both the System Status Check and Instance Status Check are successful means,
+
+The EC2 instance is healthy and should be working fine.
+
+
+What If One or Both Checks Fail?
+
+If the System Status Check fails, you may need to stop and start the instance or move it to another host.
+
+If the Instance Status Check fails, you may need to reboot the instance or troubleshoot OS-related issues.
+
 
 PREREQUSITES:
 iam: to give permission to create infra
