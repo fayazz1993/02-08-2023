@@ -11,7 +11,7 @@ language: java-1.8.0
 kind: free and opensource
 
 ARTIFACTS:
-it is the final product of a source code.
+it is the final product of the source code.
 code -- > build & test -- > artifact
 
 .jar = compile java -- > .class -- > .jar = backend
